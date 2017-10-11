@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/danman/Projects/esp8266-ebus/wiring.sch</source>
+    <date>Tue 12 Sep 2017 11:54:10 AM CEST</date>
+    <tool>Eeschema 4.0.5+dfsg1-4</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>wiring.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Screw_Terminal_1x02</value>
+      <footprint>Connectors:bornier2</footprint>
+      <libsource lib="conn" part="Screw_Terminal_1x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B27A2C</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>1N4007</value>
+      <footprint>Diodes_SMD:D_MELF</footprint>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B27B9A</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>1N4007</value>
+      <footprint>Diodes_SMD:D_MELF</footprint>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B27D4B</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>6.8V 1.3W</value>
+      <footprint>Diodes_SMD:D_MELF</footprint>
+      <libsource lib="device" part="D_Zener"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B285A0</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B3FED5</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>ESP-01v090</value>
+      <footprint>ESP8266:ESP-01</footprint>
+      <libsource lib="ESP8266" part="ESP-01v090"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B402F3</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>10k</value>
+      <footprint>Potentiometers:Potentiometer_Trimmer-EVM3S_R</footprint>
+      <libsource lib="device" part="POT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B4131F</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BC817-40</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="transistors" part="BC817-40"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B41D09</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BC817-40</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="transistors" part="BC817-40"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B3FB55</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B42AFE</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B434AB</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>DC/DCconverter</value>
+      <footprint>footprint:DCDCconverter</footprint>
+      <libsource lib="dcconverter" part="DC/DCconverter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B449D5</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="transistors" part="BC817-40">
+      <aliases>
+        <alias>BC818-40</alias>
+      </aliases>
+      <description>45V Vce, 0.8A Ic, NPN, SOT-23</description>
+      <docs>http://www.fairchildsemi.com/ds/BC/BC817.pdf</docs>
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC817-40</field>
+        <field name="Footprint">SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dcconverter" part="DC/DCconverter">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DC/DCconverter</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="Vout" type="input"/>
+        <pin num="4" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Zener">
+      <description>Zener Diode</description>
+      <docs>https://en.wikipedia.org/wiki/Zener_diode</docs>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-Pak_TO252AA</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP8266" part="ESP-01v090">
+      <description>ESP8266 ESP-01 module, v090</description>
+      <docs>http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/</docs>
+      <footprints>
+        <fp>ESP-01*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-01v090</field>
+      </fields>
+      <pins>
+        <pin num="1" name="UTXD" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="CH_PD" type="input"/>
+        <pin num="4" name="GPIO2" type="3state"/>
+        <pin num="5" name="RST" type="input"/>
+        <pin num="6" name="GPIO0" type="3state"/>
+        <pin num="7" name="VCC" type="power_in"/>
+        <pin num="8" name="URXD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="POT">
+      <description>Potentionmeter</description>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Screw_Terminal_1x02">
+      <description>2-pin screw terminal connector</description>
+      <footprints>
+        <fp>bornier2</fp>
+        <fp>TerminalBlock*2pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_1x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ESP8266">
+      <uri>/home/danman/kicad/libraries/kicad-ESP8266/ESP8266.lib</uri>
+    </library>
+    <library logical="dcconverter">
+      <uri>/home/danman/Projects/esp8266-ebus/dcconverter.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="transistors">
+      <uri>/usr/share/kicad/library/transistors.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D3-Pad2)">
+      <node ref="Q1" pin="3"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="2" name="Net-(RV1-Pad2)">
+      <node ref="U2" pin="8"/>
+      <node ref="RV1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="4" name="Earth">
+      <node ref="J1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(D2-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="D2" pin="2"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(R2-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="8" name="Net-(R1-Pad1)">
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="9" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="10" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="11" name="Net-(Q2-Pad1)">
+      <node ref="R2" pin="2"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="12" name="Net-(D1-Pad2)">
+      <node ref="RV1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="13" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="14" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="15" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+  </nets>
+</export>
