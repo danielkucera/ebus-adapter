@@ -1,4 +1,4 @@
-update=Sat 09 Sep 2017 06:25:01 PM CEST
+update=Wed 11 Oct 2017 11:29:10 AM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,9 +25,19 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=../esp8266-ebus
+LibDir=dcdcconverter.pretty;/home/danman/kicad_sources/library-repos;/home/danman/kicad_sources/library-repos/Socket_Strips.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,4 +69,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/danman/kicad/libraries/kicad-ESP8266/ESP8266
-LibName31=dcconverter
+LibName31=kicad-library/library/Connector
