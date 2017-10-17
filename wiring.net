@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/danman/Projects/esp8266-ebus/schema/wiring.sch)
-    (date "Thu 12 Oct 2017 11:22:34 PM CEST")
+    (date "Tue 17 Oct 2017 10:51:28 PM CEST")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu17.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -60,7 +60,7 @@
     (comp (ref U1)
       (value DC/DCconverter)
       (footprint footprint:DCDCconverter)
-      (libsource (lib wiring-cache) (part DC/DCconverter))
+      (libsource (lib dcconverter) (part DC/DCconverter))
       (sheetpath (names /) (tstamps /))
       (tstamp 59B449D5))
     (comp (ref D4)
@@ -145,7 +145,7 @@
       (pins
         (pin (num 1) (name K) (type passive))
         (pin (num 2) (name A) (type passive))))
-    (libpart (lib wiring-cache) (part DC/DCconverter)
+    (libpart (lib dcconverter) (part DC/DCconverter)
       (fields
         (field (name Reference) U)
         (field (name Value) DC/DCconverter))
@@ -256,12 +256,14 @@
       (pins
         (pin (num 1) (name 1) (type passive)))))
   (libraries
-    (library (logical Connector)
-      (uri /home/danman/kicad_sources/library-repos/kicad-library/library/Connector.lib))
-    (library (logical wiring-cache)
-      (uri /home/danman/Projects/esp8266-ebus/schema/wiring-cache.lib))
     (library (logical ESP8266)
       (uri /home/danman/kicad/libraries/kicad-ESP8266/ESP8266.lib))
+    (library (logical wiring-cache)
+      (uri /home/danman/Projects/esp8266-ebus/schema/wiring-cache.lib))
+    (library (logical Connector)
+      (uri /home/danman/kicad_sources/library-repos/kicad-library/library/Connector.lib))
+    (library (logical dcconverter)
+      (uri /home/danman/Projects/esp8266-ebus/schema/dcconverter.lib))
     (library (logical 74xx)
       (uri /usr/share/kicad/library/74xx.lib))
     (library (logical device)
