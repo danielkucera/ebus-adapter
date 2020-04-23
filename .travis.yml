@@ -1,0 +1,22 @@
+language: minimal
+
+services:
+  - docker
+
+jobs:
+  include:
+    - stage: GitHub Release
+      script:
+        - mkdir output
+        - chmod 777 output
+        - docker run --rm -t -v $(readlink -f .):/project:ro -v $(readlink -f .)/output:/output -w=/project danielkucera/eeshow eeplot -o output/schema.pdf wiring.sch wiring-cache.lib
+      
+      deploy:
+        provider: releases
+        api_key: $GITHUB_OAUTH_TOKEN
+        skip_cleanup: true
+        file_glob: true
+        file:
+          - output/*
+        on:
+          tags: false
