@@ -9,7 +9,7 @@ jobs:
       script:
         - mkdir output
         - chmod 777 output
-        - docker run --rm -t -v $(readlink -f .):/project:ro -v $(readlink -f .)/output:/output -w=/project danielkucera/eeshow eeplot -o output/schema.pdf wiring.sch wiring-cache.lib
+        - docker run --rm -t -v $(readlink -f .):/project:ro -v $(readlink -f .)/output:/output:rw -w=/project danielkucera/eeshow eeplot -o /output/schema.pdf wiring.sch wiring-cache.lib
       
       deploy:
         provider: releases
