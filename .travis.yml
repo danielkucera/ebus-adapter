@@ -6,7 +6,7 @@ services:
 env:
   global:
     - SCHFILE=wiring.sch
-    - PDFFILE=wiring-$TRAVIS_TAG-$TRAVIS_COMMIT.pdf
+    - PDFFILE=wiring-$TRAVIS_COMMIT.pdf
 
 jobs:
   include:
