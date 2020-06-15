@@ -663,15 +663,14 @@ $EndComp
 $Comp
 L power:+3V3 #PWR013
 U 1 1 5EADA4F9
-P 7900 1850
-F 0 "#PWR013" H 7900 1700 50  0001 C CNN
-F 1 "+3V3" V 7915 1978 50  0000 L CNN
-F 2 "" H 7900 1850 50  0001 C CNN
-F 3 "" H 7900 1850 50  0001 C CNN
-	1    7900 1850
+P 7500 1850
+F 0 "#PWR013" H 7500 1700 50  0001 C CNN
+F 1 "+3V3" V 7515 1978 50  0000 L CNN
+F 2 "" H 7500 1850 50  0001 C CNN
+F 3 "" H 7500 1850 50  0001 C CNN
+	1    7500 1850
 	0    1    1    0   
 $EndComp
-Connection ~ 7400 1850
 $Comp
 L power:GND #PWR012
 U 1 1 5EADDF0B
@@ -692,17 +691,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 1500 5600 1500
 $Comp
-L Device:CP C2
-U 1 1 5EAE85B2
-P 4350 2150
-F 0 "C2" H 4468 2196 50  0000 L CNN
-F 1 "CP" H 4468 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4388 2000 50  0001 C CNN
-F 3 "~" H 4350 2150 50  0001 C CNN
-	1    4350 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5EAF133C
 P 4700 2150
@@ -713,12 +701,7 @@ F 3 "~" H 4700 2150 50  0001 C CNN
 	1    4700 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 1850 4450 1850
 Connection ~ 4700 1850
-Wire Wire Line
-	4350 2000 4350 1850
-Connection ~ 4350 1850
 Wire Wire Line
 	4700 2000 4700 1850
 $Comp
@@ -732,8 +715,6 @@ F 3 "" H 4700 2300 50  0001 C CNN
 	1    4700 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 2300 4450 2300
 $Comp
 L Device:C C7
 U 1 1 5EB10C80
@@ -754,73 +735,8 @@ Wire Wire Line
 Wire Wire Line
 	7100 2150 7400 2150
 Connection ~ 7400 2150
-$Comp
-L Connector:Conn_01x02_Male J5
-U 1 1 5EBAFB29
-P 4450 1650
-F 0 "J5" V 4512 1694 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 4603 1694 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 1650 50  0001 C CNN
-F 3 "~" H 4450 1650 50  0001 C CNN
-	1    4450 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J4
-U 1 1 5EBB5E74
-P 4350 2500
-F 0 "J4" V 4504 2312 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 4413 2312 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4350 2500 50  0001 C CNN
-F 3 "~" H 4350 2500 50  0001 C CNN
-	1    4350 2500
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4700 2300
 Wire Wire Line
-	4100 1850 4350 1850
-Wire Wire Line
-	4350 1850 4450 1850
-Connection ~ 4450 1850
-Wire Wire Line
-	4450 2300 4350 2300
-Connection ~ 4450 2300
-Connection ~ 4350 2300
-$Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5EBD3E8F
-P 7800 1650
-F 0 "J7" V 7862 1694 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 7953 1694 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7800 1650 50  0001 C CNN
-F 3 "~" H 7800 1650 50  0001 C CNN
-	1    7800 1650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7400 1850 7700 1850
-Wire Wire Line
-	7800 1850 7900 1850
-Wire Wire Line
-	7700 1850 7800 1850
-Connection ~ 7700 1850
-Connection ~ 7800 1850
-$Comp
-L Connector:Conn_01x02_Male J6
-U 1 1 5EBDD940
-P 7700 2350
-F 0 "J6" V 7854 2162 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 7763 2162 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7700 2350 50  0001 C CNN
-F 3 "~" H 7700 2350 50  0001 C CNN
-	1    7700 2350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7800 2150 7700 2150
-Wire Wire Line
-	7400 2150 7700 2150
-Connection ~ 7700 2150
+	4450 1850 4700 1850
 Connection ~ 4500 4100
 Wire Wire Line
 	4500 4100 4800 4100
@@ -914,12 +830,12 @@ BUS-RX
 $Comp
 L power:VCC #PWR0107
 U 1 1 5EA2DD70
-P 4100 1850
-F 0 "#PWR0107" H 4100 1700 50  0001 C CNN
-F 1 "VCC" V 4118 1977 50  0000 L CNN
-F 2 "" H 4100 1850 50  0001 C CNN
-F 3 "" H 4100 1850 50  0001 C CNN
-	1    4100 1850
+P 4450 1850
+F 0 "#PWR0107" H 4450 1700 50  0001 C CNN
+F 1 "VCC" V 4468 1977 50  0000 L CNN
+F 2 "" H 4450 1850 50  0001 C CNN
+F 3 "" H 4450 1850 50  0001 C CNN
+	1    4450 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -970,4 +886,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 5900 7950 5750
 Connection ~ 7950 5750
+Wire Wire Line
+	7400 1850 7500 1850
+Connection ~ 7400 1850
 $EndSCHEMATC
