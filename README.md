@@ -2,9 +2,9 @@
 
 This repo conains KiCAD design of eBUS bus powered (without external supply) adapter to WiFi.
 
-Software for this module can be used with following firmware: https://github.com/danielkucera/esp8266-arduino-ebus
+It can be used with following firmware: https://github.com/danielkucera/esp8266-arduino-ebus
 
-For control software ebusd can be used: https://github.com/john30/ebusd/
+For control software, ebusd can be used: https://github.com/john30/ebusd/
 
 ![board v1.0](img/board-v1.0.jpg)
 
