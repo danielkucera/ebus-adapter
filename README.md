@@ -21,4 +21,4 @@ For control software, ebusd can be used: https://github.com/john30/ebusd/
 
 You can find latest schematic in [releases](https://github.com/danielkucera/ebus-adapter/releases)
 
-If you are interested in buying bare PCB or finished module, contact me directly.
+You can buy finished board in [my Lectronz store](https://www.lectronz.com/products/ebus-to-wifi-adapter)
