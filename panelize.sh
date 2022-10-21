@@ -1,4 +1,4 @@
-kikit panelize --layout 'grid; rows: 3; cols: 2; hspace: 2mm; vspace: 0.5mm' \
+kikit panelize --layout 'grid; rows: 3; cols: 2; hspace: 2mm; vspace: 0.5mm; alternation: cols; rotation: 180deg;' \
 	--source 'tolerance: 50mm' \
 	--tabs 'fixed; width: 5mm' \
 	--cuts 'mousebites' \
