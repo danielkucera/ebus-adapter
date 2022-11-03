@@ -1,6 +1,6 @@
-kikit panelize --layout 'grid; rows: 3; cols: 2; hspace: 2mm; vspace: 0.5mm; alternation: cols; rotation: 180deg;' \
+kikit panelize --layout 'grid; rows: 3; cols: 2; hspace: 2mm; vspace: 1mm; alternation: cols; rotation: 180deg;' \
 	--source 'tolerance: 50mm' \
-	--tabs 'fixed; width: 5mm' \
+	--tabs 'fixed; vcount: 0; width: 9mm;' \
 	--cuts 'mousebites' \
 	--framing 'railslr; width: 3mm; space: 1.5mm' \
 	--fiducials '3fid; hoffset: 1.5mm; voffset: 1.5mm; coppersize: 2mm; opening: 1mm;' \
