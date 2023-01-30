@@ -15,6 +15,6 @@ For control software, ebusd can be used: https://github.com/john30/ebusd/
 
 ## Hardware
 
-You can buy finished board in [my Lectronz store](https://www.lectronz.com/products/ebus-to-wifi-adapter)
+You can buy finished board in [my Lectronz store](https://www.lectronz.com/stores/danman-eu)
 
 View this project on [CADLAB.io](https://cadlab.io/project/25252). 
