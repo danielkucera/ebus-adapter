@@ -383,8 +383,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "wiring.step",
+      "vrml": "wiring.wrl"
     },
     "page_layout_descr_file": ""
   },
